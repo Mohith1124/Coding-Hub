@@ -1,11 +1,11 @@
 class Currency {
-public static void main(String[] args) {
-    int rupee = 100;
-    double dollar = 86.24;
-    double rupee_dollar = (float) (rupee / dollar);
-    double dollar_rupee = (float) (dollar * rupee);  
-    System.out.println("Rupee to Dollars: " + rupee_dollar);
-    System.out.println("Dollars to Rupees: " + dollar_rupee);
+    public static void main(String[] args) {
+        double rupee = 100;
+        double exchangeRate = 86.24;
+        double rupeeToDollar = rupee / exchangeRate;
+        double dollarToRupee = exchangeRate;
+
+        System.out.println("100 Rupees to Dollars: " + rupeeToDollar);
+        System.out.println("1 Dollar to Rupees: " + dollarToRupee);
     }
 }
-
