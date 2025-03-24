@@ -1,19 +1,23 @@
-class Test2
-{
-  public static void main(String[] args){
-  int n1=6,n2=12,i=1,gcf=0;
-  int num = n1<n2? n1 : n2 ;
-  while(i<=num/2)
-  {
-    if(num%i==0)
-      gcf=i;
-      i++;
-  }
-   System.out.println(gcf);
+package com.CodingHub;
 
+public class GCF {
+	public int greatestCommonFactor(int n1,int n2)
+	{   int gcf=0;
+	    int n = (n1<n2)?n1:n2;
+		for(int i=1;i<=n1;i++)
+		{
+			if(n%i==0)
+			{
+				gcf=i;
+			}
+		}
+		return gcf;
+	}
+	public static void main(String[] args)
+	{
+		int n1=12,n2=24;
+		GCF obj = new GCF();
+		System.out.println(obj.greatestCommonFactor(n1,n2));
+	}
 
-
-
-
- }
 }
