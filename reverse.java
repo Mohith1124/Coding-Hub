@@ -8,7 +8,6 @@ class ReverseArray
    for(int i=0;i<n;i++)
    {
      b[i]=a[n-1-i];
-     c++;
    }
   for(int i=0;i<n;i++)
       System.out.println(b[i]);
