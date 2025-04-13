@@ -6,8 +6,8 @@ Class StringPalindrome
    String rev = "";
    for(int i=0;i<s.length();i++)
    {
-    rev+=s.charAt(i);
+    rev=s.charAt(i)+rev;
    }
-  System.out.println((s.equals(rev)?"Palindrome":"Not a Palindrome");
+  System.out.println(s.equals(rev)?"Palindrome":"Not a Palindrome");
  }
 }

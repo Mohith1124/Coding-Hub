@@ -3,7 +3,7 @@ class MostRepeatedVowel
  public static void main(String[] args)
  {
   String s = "Hello Good Morning All";
-  s = s.toLowerCase()
+  s = s.toLowerCase(); 
   int maxCount = 0;
   char vowel =' ';
   for(int i=0;i<s.length();i++)
